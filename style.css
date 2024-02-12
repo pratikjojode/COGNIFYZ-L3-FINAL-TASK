@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navigation */
+#navigation {
+  padding: 10px 20px;
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+nav ul li {
+  margin-right: 20px;
+  list-style: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.5s;
+}
+nav ul li :hover{
+  color: red;
+}
+.logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+#nav2{
+  display: none;
+}
+
+#login {
+  background-color: blue;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+#getStarted {
+  background-color: green;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+#login:hover {
+  background-color: lightblue;
+}
+#getStarted:hover {
+  background-color: lightcoral;
+}
+#login i {
+  margin-right: 5px;
+}
+
+/* herosection */
+#hero-section {
+  padding: 30px 20px;
+}
+.hero-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+.content {
+  flex-basis: 60%;
+  margin-bottom: 20px;
+}
+.imgContent {
+  flex-basis: 30%;
+}
+.content h1 {
+  font-size: 50px;
+  margin-top: 30px;
+}
+.imgContent img {
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.imgContent img:hover {
+  transform: scale(0.9);
+}
+#CTA {
+  padding: 18px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: green;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#CTA:hover {
+  background-color: lightcoral;
+}
+.box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.box div {
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 255, 0.286);
+  text-align: center;
+  border-radius: 20px;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.box div i {
+  font-size: 20px;
+}
+.box div:hover {
+  transform: translateY(-5px);
+}
+
+/* intro page */
+#intro {
+  background-image: url("IMAGES/istockphoto-175409968-612x612.jpg");
+  padding: 20px 30px;
+}
+.brief-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brief-col-2 div {
+  padding: 20px;
+  border: 3px solid bisque;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.brief-col-2 div:hover {
+  transform: translateY(5px);
+}
+.brief-col-1 h2 {
+  text-align: center;
+  color: aqua;
+}
+
+/* offer  */
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+.offer img {
+  width: 250px;
+}
+
+.offer {
+  /* width: 100%; */
+  text-align: center;
+  padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.096);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+#offer h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.offer:hover {
+  transform: scale(1.1);
+}
+
+/* skill section */
+#skill {
+  text-align: center;
+  padding: 50px 0;
+}
+
+#skill h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+#skill {
+  background-color: rgba(16, 16, 16, 0.663);
+}
+.skill-1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-1 i {
+  font-size: 200px;
+}
+
+.skill-1:hover {
+  transform: translateY(-5px);
+}
+
+/* cta section */
+#Call-to-action {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.call-content h1 {
+  margin-top: 30px;
+}
+
+.call-img img {
+  width: 300px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+#menu {
+  display: none;
+}
+
+/* contact  */
+
+.contact-div {
+  text-align: center;
+}
+.contact-div h1 {
+  font-size: 2rem;
+}
+.contact-div p {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+.contact-row {
+  display: flex;
+  padding: 20px;
+  margin-top: 20px;
+}
+.contact-col-1 {
+  text-align: center;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.inputs input {
+  margin-top: 20px;
+  height: 30px;
+  font-size: 15px;
+  padding: 10px;
+}
+#sendBtn {
+  background-color: blue;
+  margin-top: 10px;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+.contact-col-1 div {
+  background-color: aqua;
+  margin-top: 20px;
+  height: 50px;
+  padding: 20px;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* fotter section */
+#footer {
+  background-color: black;
+  color: gold;
+  font-size: 10px;
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#footer .myInfo i{
+  margin-right: 20px;
+  font-size: 20px;
+}
+/* nav2 */
+#nav2 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#nav2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  background-color: aqua;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Define the animation */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the text elements */
+.content h1,
+.offer p {
+  animation: slideIn 0.5s ease forwards;
+}
+
+@media (max-width: 1080px) {
+  #navigation {
+    width: 100%;
+  }
+  .hero-row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .imgContent img {
+    width: 100%;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .hide {
+    display: none;
+  }
+  .brief-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #menu {
+    display: block;
+  }
+  .contact-row {
+    display: flex;
+    flex-direction: column;
+  }
+}
